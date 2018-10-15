@@ -1,0 +1,86 @@
+
+:root {
+  --spacing1: 0.5rem;
+  --spacing2: 1rem;
+}
+
+
+.navigation {
+	width: 100%;
+	position: fixed;
+	height: 1px;
+
+	display: flex;
+}
+
+
+.slide-nav {
+	box-sizing: border-box;
+	height: 100vh;
+	width: 80%;
+	margin: 0;
+  padding: var(--spacing2);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+	position: relative;
+	left: 0;
+
+	box-shadow: var(--shadow-one), var(--default-shadow);
+
+	background-image: url("./img/carbon_bg.gif");
+	background-repeat: repeat;
+
+	transition-property: left;
+	transition-duration: 0.3s;
+	transition-timing-function: linear;
+}
+
+
+.slide-nav::after {
+	content: " ";
+	height: 40vh;
+
+	background-image: url("./img/logo.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+.slide-nav--collapse {
+	left: -100%;
+}
+
+
+.slide-nav__toggle {
+	padding: var(--spacing1);
+	position: absolute;
+	top: var(--spacing2);
+	right: var(--spacing2);
+
+	font-size: 125%;
+}
+
+
+.nav-item {
+	display: flex;
+	align-items: stretch;
+	list-style: none;
+}
+
+
+.nav-link {
+	text-decoration: none;
+	color: var(--primary-text-color);
+	flex: 1 1 0;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+	color: var(--red);
+	outline: none;
+}

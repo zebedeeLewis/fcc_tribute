@@ -4,24 +4,59 @@
     <meta charset="utf-8" />
     <meta name="viewport"
      content="width: device-width, initial-scale=1" />
-    <link rel="preload" type="text/css" as="style"
+
+		<link rel="stylesheet"
+		 href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+		 integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+		 crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css"
+     href="nav.css" />
+    <link rel="stylesheet" type="text/css"
      href="style.css" />
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="#">IMF</a></li>
-        <li><a href="#">Operators</a></li>
-        <li><a href="#">High Value Target</a></li>
-        <li><a href="#">Persons Of Interest</a></li>
-        <li><a href="#">Recovered WMD</a></li>
-        <li><a href="#">Missions</a></li>
+    <nav class="navigation">
+      <ul id="nav" class="slide-nav">
+        <li class="nav-item">
+					<a class="nav-link" href="#main">
+						IMF
+					</a>
+				</li>
+        <li class="nav-item">
+					<a class="nav-link" href="#operators">
+						Operators
+					</a>
+				</li>
+        <li class="nav-item">
+					<a class="nav-link" href="#hvt">
+						High Value Target
+					</a>
+				</li>
+        <li class="nav-item">
+					<a class="nav-link" href="#poi">
+						Persons Of Interest
+					</a>
+				</li>
+        <li class="nav-item">
+					<a class="nav-link" href="#wmd">
+						Recovered WMD
+					</a>
+				</li>
+        <li class="nav-item">
+					<a class="nav-link" href="#missions">
+						Missions
+					</a>
+				</li>
       </ul>
+			<a class="slide-nav__toggle nav-link" href="#nav">
+				<span class="fas fa-bars"></span>
+			</a>
     </nav>
 
-    <main id="main">
-      <h1 id="title">Tribute To The IMF</h1>
-      <p id="tribute-info">
+    <main id="main" class="main">
+      <h1 id="title" class="tribute-title">Tribute To The IMF</h1>
+      <p id="tribute-info" class="tribute-intro">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       Praesent et eros tristique, tristique enim et, fermentum risus.
       In ac vehicula orci. Mauris rhoncus purus sed sapien efficitur,
@@ -33,7 +68,7 @@
       gravida feugiat leo.
       </p>
 
-      <p>
+      <p class="tribute-intro">
       Nulla vitae porta ante, ut fermentum nisi. Donec mi felis,
       molestie eu dictum id, auctor feugiat nulla. Aenean bibendum
       viverra semper. Quisque feugiat, urna vitae scelerisque
@@ -915,10 +950,30 @@
 
     <footer>
       <div id="img-div">
-        <span id="img-caption"></span>
+        <span id="img-caption">IMF Logo</span>
         <img id="image" src="" alt="logo" />
-        <a href="" target="_blank">Learn More</a>
+        <a target="_blank" id="tribute-link"
+				 href="http://missionimpossible.wikia.com/wiki/Main_Page">
+				  Learn More
+				</a>
       </div>
     </footer>
-  </body>
+
+
+		<!--
+		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+		-->
+
+    <script
+     src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+     integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+     crossorigin="anonymous">
+    </script>
+
+    <script>
+      $('.slide-nav__toggle').click(function () {
+          $('.slide-nav').toggleClass('slide-nav--collapse');
+      });
+    </script>
+	</body>
 </html>
