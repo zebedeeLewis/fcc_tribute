@@ -1,0 +1,209 @@
+
+@media (min-width: 768px) {
+  .slide-nav__item {
+    transition-property: height;
+    transition-duration: 0.5s;
+    position: relative;
+    animation-name: right;
+  }
+
+
+  .slide-nav__item:hover,
+  .slide-nav__item:active {
+    height: 10em;
+  }
+
+
+  .slide-nav,
+  .slide-nav__item {
+    animation-duration: 1s;
+    animation-play-state: paused;
+    animation-timing-function: linear;
+		animation-iteration-count: infinite;
+  }
+
+
+  .slide-nav { animation-name: left; }
+
+  
+  .slide-nav__ctrl--left:active ~ .slide-nav {
+    animation-play-state: running;
+  }
+
+
+  .slide-nav__ctrl--right:active ~ .slide-nav .slide-nav__item {
+    animation-play-state: running;
+  }
+
+
+  .info-card,
+  .tribute-intro {
+    display: none;
+  }
+
+
+  #info-card-state1:checked ~ .tribute-intro {
+    display: block;
+  }
+
+  #info-card-state2:checked ~ #operators,
+  #info-card-state3:checked ~ #hvt,
+  #info-card-state4:checked ~ #poi,
+  #info-card-state5:checked ~ #wmd,
+  #info-card-state6:checked ~ #missions
+   {
+    display: flex;
+  }
+
+
+  .info-card {
+    width: auto;
+    max-width: 50rem;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+
+  .info-card__content {
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: flex-end;
+    background-color: hsla(0, 0%, 5%, 0.3);
+  }
+
+
+  .profile-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: space-around;
+
+    flex: 0 0 auto;
+  }
+
+
+  .scroll-window,
+  .profile {
+    opacity: 0.2;
+  }
+
+
+  .scroll-window:hover,
+  .profile:hover {
+    opacity: 1;
+  }
+
+  .scroll-window {
+    order: 2;
+    overflow: auto;
+
+    flex: 0 0 auto;
+  }
+
+
+  .profile-list__item {
+    margin-top: var(--spacing2);
+    width: 9rem;
+    height: 9rem;
+    border-radius: 0.2rem;
+
+    flex: 0 0 auto;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+
+  .operator-1-link { background-image: url("./img/ethan-hunt.jpg"); }
+
+  .operator-2-link { background-image: url("./img/luther-stickell.jpg"); }
+
+  .operator-3-link { background-image: url("./img/benji-dunn.jpg"); }
+
+  .operator-4-link { background-image: url("./img/ilsa-faust.jpg"); }
+
+  .operator-5-link { background-image: url("./img/alan-hunley.jpg"); }
+
+
+  .hvt-1-link { background-image: url("./img/solomon-lane.jpg"); }
+
+  .hvt-2-link { background-image: url("./img/kurt-hendricks.jpg"); }
+
+  .hvt-3-link { background-image: url("./img/owen-davian.jpg"); }
+
+  .hvt-4-link { background-image: url("./img/hugh-stamp.jpg"); }
+
+  .hvt-5-link { background-image: url("./img/august-walker.jpg"); }
+
+  .hvt-6-link { background-image: url("./img/franz-krieger.jpg"); }
+
+  .hvt-7-link { background-image: url("./img/jim-phelps.jpg"); }
+
+  .hvt-8-link { background-image: url("./img/sean-ambrose.jpg"); }
+
+
+  .poi-1-link { background-image: url("./img/william-brandt.jpg"); }
+
+  .poi-2-link { background-image: url("./img/julia.jpg"); }
+
+  .poi-3-link { background-image: url("./img/lindsey-farris.jpg"); }
+
+  .poi-4-link { background-image: url("./img/nyah-nardoff-hall.jpg"); }
+
+  .poi-5-link { background-image: url("./img/jane-carter.jpg"); }
+
+  .wmd-1-link { background-image: url("./img/chimera.jpg"); }
+
+  .wmd-2-link { background-image: url("./img/rabbits-foot.png"); }
+
+  .wmd-3-link { background-image: url("./img/delta-3-submarine.jpg"); }
+
+  .wmd-4-link { background-image: url("./img/portable-nuclear-device.jpg"); }
+
+
+  .profile {
+    order: 1;
+    display: none;
+    padding: var(--spacing2);
+    margin-top: var(--spacing1);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+
+  .info-card__header,
+  .scroll-window {
+    width: 22rem;
+  }
+
+
+  .display-state1:checked ~ .profile1,
+  .display-state2:checked ~ .profile2,
+  .display-state3:checked ~ .profile3,
+  .display-state4:checked ~ .profile4,
+  .display-state5:checked ~ .profile5,
+  .display-state6:checked ~ .profile6,
+  .display-state7:checked ~ .profile7,
+  .display-state8:checked ~ .profile8 {
+    display: block;
+    animation-name: expand-profile;
+    animation-duration: 2s;
+  }
+}
+
+
+@keyframes expand-profile {
+  from {width: 0%;}
+  to {width: 100%;}
+}
+
+
+@keyframes left {
+  from {left: 0rem;}
+  to {left: 100rem;}
+}
+
+
+@keyframes right {
+  from {left: 0rem;}
+  to {left: -100rem;}
+}

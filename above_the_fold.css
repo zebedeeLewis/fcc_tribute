@@ -1,0 +1,176 @@
+
+:root {
+/*
+ * from colors.css
+ */
+  --alpha-light: 0.3;
+  --alpha-half: 0.5;
+  --alpha-full: 0.8;
+
+  --light-slate-grey: hsla(210, 14%, 53%, 1);
+
+  --dark-slate-grey: hsla(180, 25%, 25%, 1);
+
+  --hsla-blue-light: hsla(240, 100%, 50%, var(--alpha-light));
+
+  --hsla-red-light: hsla(0, 100%, 50%, var(--alpha-light));
+  --hsla-red-half: hsla(0, 100%, 50%, var(--alpha-half));
+
+  --primary-color: black;
+  --secondary-color: red;
+  --tertiary-color: blue;
+
+  --default-shadow-color: var(--dark-slate-grey);
+  --primary-shadow-color: var(--secondary-color);
+
+  --primary-font-color: var(--light-slate-grey);
+
+  --shadow-one: 0.1rem 0rem 1.5rem var(--primary-shadow-color);
+  --default-shadow: 3rem 0rem 5rem var(--primary-color);
+
+
+/*
+ * from spacing.css
+ */
+
+  --spacing2: 1rem;
+  --spacing3: 1.5rem;
+  --spacing4: 2rem;
+  --spacing6: 3rem;
+  --spacing8: 4rem;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--primary-font-color);
+}
+
+
+p { margin: 0; }
+h1 { margin: var(--spacing4) 0 var(--spacing8) 0; }
+
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: black;
+}
+
+
+.wrapper::before {
+  content: " ";
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+
+  background: linear-gradient(0deg,
+                              hsla(0, 0%, 0%, 1),
+                              hsla(0, 0%, 0%, 0.7) ),
+              url("./img/ethan-bg.jpg");
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0;
+}
+
+
+.main {
+  box-sizing: border-box;
+  padding: var(--spacing8) var(--spacing3);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+
+  z-index: 1;
+}
+
+
+.tribute-intro { flex: 0 1 30rem; }
+
+
+.footer {
+  box-sizing: border-box;
+  padding: var(--spacing2) var(--spacing3) 0 var(--spacing3);
+  width: 100%;
+
+  z-index: 2;
+}
+
+
+.img-div {
+  display: flex;
+  justify-content: center;
+}
+
+
+.img-caption,
+.tribute-link {
+  flex: 0 1 auto; 
+}
+
+
+.fcc-logo {
+  text-align: center;
+  flex: 0 1 6rem;
+  margin-left: var(--spacing2);
+  margin-right: var(--spacing2);
+}
+
+
+.credit {
+  padding-top: var(--spacing3);
+  padding-bottom: var(--spacing1);
+  text-align: center;
+}
+
+
+.state-store,
+.state-store--info-card {
+  display: none;
+}
+
+
+@media (min-width: 768px) {
+  .wrapper::before {
+    background-size: 100%, 40rem;
+    background-position: 0 0, 0;
+
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: stretch;
+  }
+
+
+  .main {
+    box-sizing: border-box;
+    padding-bottom: var(--spacing1);
+    height: 60vh;
+    order: 1;
+  }
+
+
+	.tribute-intro,
+  .info-card {
+    height: 100%;
+	}
+
+	.tribute-intro {
+    overflow: auto;
+	}
+
+  /*.info-card { flex: 0 1 30rem; }*/
+
+  .tribute-intro {
+    margin-right: 10vw;
+  }
+
+
+  .footer { order: 3; }
+}

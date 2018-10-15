@@ -4,965 +4,1815 @@
     <meta charset="utf-8" />
     <meta name="viewport"
      content="width: device-width, initial-scale=1" />
+		<title>Tribute to IMF</title>
 
-		<link rel="stylesheet"
-		 href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
-		 integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-		 crossorigin="anonymous">
+    <link rel="stylesheet"
+     href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+     integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+     crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css"
+     href="./components/text.css" />
 
     <link rel="stylesheet" type="text/css"
      href="nav.css" />
     <link rel="stylesheet" type="text/css"
-     href="style.css" />
+     href="above_the_fold.css" />
+    <link rel="stylesheet" type="text/css"
+     href="rest.css" />
+    <link rel="stylesheet" type="text/css"
+     href="interactive768p.css" />
   </head>
   <body>
-    <nav class="navigation">
-      <ul id="nav" class="slide-nav">
-        <li class="nav-item">
-					<a class="nav-link" href="#main">
-						IMF
-					</a>
-				</li>
-        <li class="nav-item">
-					<a class="nav-link" href="#operators">
-						Operators
-					</a>
-				</li>
-        <li class="nav-item">
-					<a class="nav-link" href="#hvt">
-						High Value Target
-					</a>
-				</li>
-        <li class="nav-item">
-					<a class="nav-link" href="#poi">
-						Persons Of Interest
-					</a>
-				</li>
-        <li class="nav-item">
-					<a class="nav-link" href="#wmd">
-						Recovered WMD
-					</a>
-				</li>
-        <li class="nav-item">
-					<a class="nav-link" href="#missions">
-						Missions
-					</a>
-				</li>
-      </ul>
-			<a class="slide-nav__toggle nav-link" href="#nav">
-				<span class="fas fa-bars"></span>
-			</a>
-    </nav>
+    <div class="wrapper">
+      <nav class="navigation">
+        <a class="slide-nav__ctrl--left" href="#nav">
+          <span class="fas fa-chevron-left"></span>
+        </a>
 
-    <main id="main" class="main">
-      <h1 id="title" class="tribute-title">Tribute To The IMF</h1>
-      <p id="tribute-info" class="tribute-intro">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Praesent et eros tristique, tristique enim et, fermentum risus.
-      In ac vehicula orci. Mauris rhoncus purus sed sapien efficitur,
-      ut bibendum nisi scelerisque. Proin ultrices nibh in sapien
-      lacinia pellentesque. Maecenas eleifend condimentum lectus, in
-      sodales sapien ultricies eget. Phasellus vel diam at ligula
-      accumsan elementum non ut augue. Donec ultricies vulputate ante,
-      a maximus lorem suscipit eget. Donec sem ipsum, porta eu nisi a,
-      gravida feugiat leo.
-      </p>
+        <a class="slide-nav__ctrl--right" href="#nav">
+          <span class="fas fa-chevron-right"></span>
+        </a>
 
-      <p class="tribute-intro">
-      Nulla vitae porta ante, ut fermentum nisi. Donec mi felis,
-      molestie eu dictum id, auctor feugiat nulla. Aenean bibendum
-      viverra semper. Quisque feugiat, urna vitae scelerisque
-      condimentum, sem tortor commodo erat, id ultrices quam risus in
-      ante. Quisque arcu lacus, tristique at dolor sed, dapibus
-      fringilla sem. Maecenas lacinia turpis nec ante pretium
-      consequat. Aliquam at velit augue. Aliquam eleifend metus nulla,
-      in suscipit dui interdum iaculis. Aliquam sagittis purus vel
-      purus porttitor, sed finibus nulla sagittis. Donec sagittis
-      tincidunt metus, eu bibendum leo tempus at. Mauris tincidunt
-      rhoncus eleifend.
-      </p>
-
-      <section id="operators" class="">
-        <h2>Operators</h2>
-        <ul>
-          <li><a href="#operator-1">Operator</a></li>
-          <li><a href="#operator-2">Operator</a></li>
-          <li><a href="#operator-3">Operator</a></li>
-          <li><a href="#operator-4">Operator</a></li>
+        <ul id="nav" class="slide-nav slide-nav--collapse">
+          <li class="slide-nav__item">
+            <label for="info-card-state1" class="nav-item">
+              IMF
+            </label>
+            <a class="nav-item nav-link" href="#main">
+              IMF
+            </a>
+          </li>
+          <li class="slide-nav__item">
+            <label for="info-card-state2" class="nav-item">
+              Operators
+            </label>
+            <a class="nav-link nav-item" href="#operators">
+              Operators
+            </a>
+          </li>
+          <li class="slide-nav__item">
+            <label for="info-card-state3" class="nav-item">
+              High Value Target
+            </label>
+            <a class="nav-item nav-link" href="#hvt">
+              High Value Target
+            </a>
+          </li>
+          <li class="slide-nav__item">
+            <label for="info-card-state4" class="nav-item">
+              Persons Of Interest
+            </label>
+            <a class="nav-item nav-link" href="#poi">
+              Persons Of Interest
+            </a>
+          </li>
+          <li class="slide-nav__item">
+            <label for="info-card-state5" class="nav-item">
+              Recovered WMD
+            </label>
+            <a class="nav-item nav-link" href="#wmd">
+              Recovered WMD
+            </a>
+          </li>
+          <li class="slide-nav__item">
+            <label for="info-card-state6" class="nav-item">
+              Missions
+            </label>
+            <a class="nav-item nav-link" href="#missions">
+              Missions
+            </a>
+          </li>
         </ul>
-        <section id="operator-1">
-          <figure>
-            <img src="" alt="" />
-            <figcaption><figcaption>
-          </figure>
-          <div>
-            <h3>Operator</h3>
-            <blockquote>
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
 
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
+        <a class="slide-nav__toggle nav-link" href="#nav">
+          <span class="fas fa-bars"></span>
+        </a>
+      </nav>
 
-              <cite>
-                <a href="*" target="_blank">wiki</a>
-              </cite>
-            <blockquote>
+      <main id="main" class="main">
+        <!-- info-card display states -->
+          <input id="info-card-state1" type="radio" checked="checked"
+           name="info-card-display" class="state-store--info-card" />
+          <input id="info-card-state2" type="radio"
+           name="info-card-display" class="state-store--info-card" />
+          <input id="info-card-state3" type="radio"
+           name="info-card-display" class="state-store--info-card" />
+          <input id="info-card-state4" type="radio"
+           name="info-card-display" class="state-store--info-card" />
+          <input id="info-card-state5" type="radio"
+           name="info-card-display" class="state-store--info-card" />
+          <input id="info-card-state6" type="radio"
+           name="info-card-display" class="state-store--info-card" />
+          <input id="info-card-state7" type="radio"
+           name="info-card-display" class="state-store--info-card" />
+        <!-- end info-card display states -->
+
+        <div class="tribute-intro">
+          <h1 id="title" class="tribute-title">Tribute To The IMF</h1>
+          <p id="tribute-info">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Praesent et eros tristique, tristique enim et, fermentum risus.
+          In ac vehicula orci. Mauris rhoncus purus sed sapien efficitur,
+          ut bibendum nisi scelerisque. Proin ultrices nibh in sapien
+          lacinia pellentesque. Maecenas eleifend condimentum lectus, in
+          sodales sapien ultricies eget. Phasellus vel diam at ligula
+          accumsan elementum non ut augue. Donec ultricies vulputate ante,
+          a maximus lorem suscipit eget. Donec sem ipsum, porta eu nisi a,
+          gravida feugiat leo.
+          </p>
+
+          <p>
+          Nulla vitae porta ante, ut fermentum nisi. Donec mi felis,
+          molestie eu dictum id, auctor feugiat nulla. Aenean bibendum
+          viverra semper. Quisque feugiat, urna vitae scelerisque
+          condimentum, sem tortor commodo erat, id ultrices quam risus in
+          ante. Quisque arcu lacus, tristique at dolor sed, dapibus
+          fringilla sem. Maecenas lacinia turpis nec ante pretium
+          consequat. Aliquam at velit augue. Aliquam eleifend metus nulla,
+          in suscipit dui interdum iaculis. Aliquam sagittis purus vel
+          purus porttitor, sed finibus nulla sagittis. Donec sagittis
+          tincidunt metus, eu bibendum leo tempus at. Mauris tincidunt
+          rhoncus eleifend.
+          </p>
+        </div>
+
+        <section id="operators" class="info-card">
+          <input id="operators-expand" type="checkbox"
+           class="state-store" />
+          <h2 class="info-card__header">
+            <label class="info-card__toggle" for="operators-expand">
+              Operators
+            </label>
+          </h2>
+          <div class="info-card__content">
+            <!-- profile display state-cluster -->
+              <input name="profile-display-state-cluster"
+               id="display-state1" class="state-store display-state1"
+               type="radio"/>
+              <input name="profile-display-state-cluster"
+               id="display-state2" class="state-store display-state2"
+               type="radio"/>
+              <input name="profile-display-state-cluster"
+               id="display-state3" class="state-store display-state3"
+               type="radio"/>
+              <input name="profile-display-state-cluster"
+               id="display-state4" class="state-store display-state4"
+               type="radio"/>
+              <input name="profile-display-state-cluster"
+               id="display-state5" class="state-store display-state5"
+               type="radio"/>
+            <!-- profile display state-cluster -->
+
+            <div class="scroll-window">
+              <ul class="profile-list">
+                <li class="profile-list__item operator-1-link">
+                  <a class="profile-link nav-item nav-link"
+                   href="#operator-1">
+                    Ethan Hunt
+                  </a>
+                  <label for="display-state1" class="nav-item">
+                    Ethan Hunt
+                  </label>
+                </li>
+                <li class="profile-list__item operator-2-link">
+                  <a class="profile-link nav-item nav-link"
+                   href="#operator-2">
+                    Luther Stickell
+                  </a>
+                  <label for="display-state2" class="nav-item">
+                    Luther Stickell
+                  </label>
+                </li>
+                <li class="profile-list__item operator-3-link">
+                  <a class="profile-link nav-item nav-link"
+                   href="#operator-3">
+                    Benji Dunn
+                  </a>
+                  <label for="display-state3" class="nav-item">
+                    Benji Dunn
+                  </label>
+                </li>
+                <li class="profile-list__item operator-4-link">
+                  <a class="profile-link nav-item nav-link"
+                   href="#operator-4">
+                    Ilsa Faust
+                  </a>
+                  <label for="display-state4" class="nav-item">
+                    Ilsa Faust
+                  </label>
+                </li>
+                <li class="profile-list__item operator-5-link">
+                  <a class="profile-link nav-item nav-link"
+                   href="#operator-5">
+                    Alan Hunley
+                  </a>
+                  <label for="display-state5" class="nav-item">
+                    Alan Hunley
+                  </label>
+                </li>
+              </ul>
+            </div>
+
+            <section id="operator-1" class="profile profile1">
+              <figure class="profile__banner">
+                <img class="responsive-img"
+                 src="./img/ethan-hunt.jpg" alt="" />
+                <figcaption><figcaption>
+              </figure>
+              <div class="profile__main">
+                <input type="checkbox" id="state1"
+                 class="state-store" />
+
+                <h3>Ethan Hunt</h3>
+                <blockquote class="profile__details">
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <cite>
+                    <a href="*" target="_blank">wiki</a>
+                  </cite>
+                </blockquote>
+
+                <label class="read-more" for="state1"/>
+                </label>
+              </div>
+            </section>
+
+            <section id="operator-2" class="profile profile2">
+              <figure class="profile__banner">
+                <img class="responsive-img"
+                 src="./img/luther-stickell.jpg" alt="" />
+                <figcaption><figcaption>
+              </figure>
+              <div class="profile__main">
+                <input type="checkbox" id="state2"
+                 class="state-store" />
+
+                <h3>Luther Stickell</h3>
+                <blockquote class="profile__details">
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <cite>
+                    <a href="*" target="_blank">wiki</a>
+                  </cite>
+                </blockquote>
+
+                <label class="read-more" for="state2"/>
+                </label>
+              </div>
+            </section>
+
+            <section id="operator-3" class="profile profile3">
+              <figure class="profile__banner">
+                <img class="responsive-img"
+                 src="./img/benji-dunn.jpg" alt="" />
+                <figcaption><figcaption>
+              </figure>
+              <div class="profile__main">
+                <input type="checkbox" id="state3"
+                 class="state-store" />
+
+                <h3>Benji Dunn</h3>
+                <blockquote class="profile__details">
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <cite>
+                    <a href="*" target="_blank">wiki</a>
+                  </cite>
+                </blockquote>
+
+                <label class="read-more" for="state3"/>
+                </label>
+              </div>
+            </section>
+
+            <section id="operator-4" class="profile profile4">
+              <figure class="profile__banner">
+                <img class="responsive-img"
+                 src="./img/ilsa-faust.jpg" alt="" />
+                <figcaption><figcaption>
+              </figure>
+              <div class="profile__main">
+                <input type="checkbox" id="state4"
+                 class="state-store" />
+
+                <h3>Ilsa Faust</h3>
+                <blockquote class="profile__details">
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <cite>
+                    <a href="*" target="_blank">wiki</a>
+                  </cite>
+                </blockquote>
+
+                <label class="read-more" for="state4"/>
+                </label>
+              </div>
+            </section>
+
+            <section id="operator-5" class="profile profile5">
+              <figure class="profile__banner">
+                <img class="responsive-img"
+                 src="./img/alan-hunley.jpg" alt="" />
+                <figcaption><figcaption>
+              </figure>
+              <div class="profile__main">
+                <input type="checkbox" id="state5"
+                 class="state-store" />
+
+                <h3>Alan Hunley</h3>
+                <blockquote class="profile__details">
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <cite>
+                    <a href="*" target="_blank">wiki</a>
+                  </cite>
+                </blockquote>
+
+                <label class="read-more" for="state5"/>
+                </label>
+              </div>
+            </section>
           </div>
         </section>
 
-        <section id="operator-2">
-          <figure>
-            <img src="" alt="" />
-            <figcaption><figcaption>
-          </figure>
-          <div>
-            <h3>Operator</h3>
-            <blockquote>
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
+        <section id="hvt" class="info-card">
+          <input id="hvt-expand" type="checkbox"
+           class="state-store" />
+          <h2 class="info-card__header">
+            <label class="info-card__toggle" for="hvt-expand">
+              High Value Targets
+            </label>
+          </h2>
+          <div class="info-card__content">
+            <!-- profile display state-cluster -->
+              <input name="profile-display-state-cluster"
+               id="display-state1-1" class="state-store display-state1"
+               type="radio"/>
+              <input name="profile-display-state-cluster"
+               id="display-state1-2" class="state-store display-state2"
+               type="radio"/>
+              <input name="profile-display-state-cluster"
+               id="display-state1-3" class="state-store display-state3"
+               type="radio"/>
+              <input name="profile-display-state-cluster"
+               id="display-state1-4" class="state-store display-state4"
+               type="radio"/>
+              <input name="profile-display-state-cluster"
+               id="display-state1-5" class="state-store display-state5"
+               type="radio"/>
+              <input name="profile-display-state-cluster"
+               id="display-state1-6" class="state-store display-state6"
+               type="radio"/>
+              <input name="profile-display-state-cluster"
+               id="display-state1-7" class="state-store display-state7"
+               type="radio"/>
+              <input name="profile-display-state-cluster"
+               id="display-state1-8" class="state-store display-state8"
+               type="radio"/>
+            <!-- profile display state-cluster -->
 
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
+            <div class="scroll-window">
+              <ul class="profile-list">
+                <li class="profile-list__item hvt-1-link">
+                  <a class="profile-link nav-item nav-link"
+                   href="#hvt-1">
+                    Solomon Lane
+                  </a>
+                  <label for="display-state1-1" class="nav-item">
+                    Solomon Lane
+                  </label>
+                </li>
+                <li class="profile-list__item hvt-2-link">
+                  <a class="profile-link nav-item nav-link"
+                   href="#hvt-2">
+                    Kurt Hendrics
+                  </a>
+                  <label for="display-state1-2" class="nav-item">
+                    Kurt Hendrics
+                  </label>
+                </li>
+                <li class="profile-list__item hvt-3-link">
+                  <a class="profile-link nav-item nav-link"
+                   href="#hvt-3">
+                    Owen Davian
+                  </a>
+                  <label for="display-state1-3" class="nav-item">
+                    Owen Davian
+                  </label>
+                </li>
+                <li class="profile-list__item hvt-4-link">
+                  <a class="profile-link nav-item nav-link"
+                   href="#hvt-4">
+                    Hugh Stamp
+                  </a>
+                  <label for="display-state1-4" class="nav-item">
+                    Hugh Stamp
+                  </label>
+                </li>
+                <li class="profile-list__item hvt-5-link">
+                  <a class="profile-link nav-item nav-link"
+                   href="#hvt-5">
+                    August Walker
+                  </a>
+                  <label for="display-state1-5" class="nav-item">
+                    August Walker
+                  </label>
+                </li>
+                <li class="profile-list__item hvt-6-link">
+                  <a class="profile-link nav-item nav-link"
+                   href="#hvt-6">
+                    Franz Kerieger
+                  </a>
+                  <label for="display-state1-6" class="nav-item">
+                    Franz Kerieger
+                  </label>
+                </li>
+                <li class="profile-list__item hvt-7-link">
+                  <a class="profile-link nav-item nav-link"
+                   href="#hvt-7">
+                    Jim Phelps
+                  </a>
+                  <label for="display-state1-7" class="nav-item">
+                    Jim Phelps
+                  </label>
+                </li>
+                <li class="profile-list__item hvt-8-link">
+                  <a class="profile-link nav-item nav-link"
+                   href="#hvt-8">
+                    Sean Ambrose
+                  </a>
+                  <label for="display-state1-8" class="nav-item">
+                    Sean Ambrose
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <section id="hvt-1" class="profile profile1">
+              <figure class="profile__banner">
+                <img class="responsive-img"
+                 src="./img/solomon-lane.jpg" alt="" />
+                <figcaption><figcaption>
+              </figure>
+              <div class="profile__main">
+                <input type="checkbox" id="hvt-state1"
+                 class="state-store" />
 
-              <cite>
-                <a href="*" target="_blank">wiki</a>
-              </cite>
-            <blockquote>
+                <h3>Solomon Lane</h3>
+                <blockquote class="profile__details">
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <cite>
+                    <a href="*" target="_blank">wiki</a>
+                  </cite>
+                </blockquote>
+
+                <label class="read-more" for="hvt-state1"/>
+                </label>
+              </div>
+            </section>
+
+            <section id="hvt-2" class="profile profile2">
+              <figure class="profile__banner">
+                <img class="responsive-img"
+                 src="./img/kurt-hendricks.jpg" alt="" />
+                <figcaption><figcaption>
+              </figure>
+              <div class="profile__main">
+                <input type="checkbox" id="hvt-state2"
+                 class="state-store" />
+
+                <h3>Kurt Hendricks</h3>
+                <blockquote class="profile__details">
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <cite>
+                    <a href="*" target="_blank">wiki</a>
+                  </cite>
+                </blockquote>
+
+                <label class="read-more" for="hvt-state2"/>
+                </label>
+              </div>
+            </section>
+
+            <section id="hvt-3" class="profile profile3">
+              <figure class="profile__banner">
+                <img class="responsive-img"
+                 src="./img/owen-davian.jpg" alt="" />
+                <figcaption><figcaption>
+              </figure>
+              <div class="profile__main">
+                <input type="checkbox" id="hvt-state3"
+                 class="state-store" />
+
+                <h3>Owen Davian</h3>
+                <blockquote class="profile__details">
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <cite>
+                    <a href="*" target="_blank">wiki</a>
+                  </cite>
+                </blockquote>
+
+                <label class="read-more" for="hvt-state3"/>
+                </label>
+              </div>
+            </section>
+
+            <section id="hvt-4" class="profile profile4">
+              <figure class="profile__banner">
+                <img class="responsive-img"
+                 src="./img/hugh-stamp.jpg" alt="" />
+                <figcaption><figcaption>
+              </figure>
+              <div class="profile__main">
+                <input type="checkbox" id="hvt-state4"
+                 class="state-store" />
+
+                <h4>Hugh Stamp</h4>
+                <blockquote class="profile__details">
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <cite>
+                    <a href="*" target="_blank">wiki</a>
+                  </cite>
+                </blockquote>
+
+                <label class="read-more" for="hvt-state4"/>
+                </label>
+              </div>
+            </section>
+
+            <section id="hvt-5" class="profile profile5">
+              <figure class="profile__banner">
+                <img class="responsive-img"
+                 src="./img/august-walker.jpg" alt="" />
+                <figcaption><figcaption>
+              </figure>
+              <div class="profile__main">
+                <input type="checkbox" id="hvt-state5"
+                 class="state-store" />
+
+                <h3>August Walker</h3>
+                <blockquote class="profile__details">
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <cite>
+                    <a href="*" target="_blank">wiki</a>
+                  </cite>
+                </blockquote>
+
+                <label class="read-more" for="hvt-state5"/>
+                </label>
+              </div>
+            </section>
+
+            <section id="hvt-6" class="profile profile6">
+              <figure class="profile__banner">
+                <img class="responsive-img"
+                 src="./img/franz-krieger.jpg" alt="" />
+                <figcaption><figcaption>
+              </figure>
+              <div class="profile__main">
+                <input type="checkbox" id="hvt-state6"
+                 class="state-store" />
+
+                <h3>Franz Krieger</h3>
+                <blockquote class="profile__details">
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <cite>
+                    <a href="*" target="_blank">wiki</a>
+                  </cite>
+                </blockquote>
+
+                <label class="read-more" for="hvt-state6"/>
+                </label>
+              </div>
+            </section>
+
+            <section id="hvt-7" class="profile profile7">
+              <figure class="profile__banner">
+                <img class="responsive-img"
+                 src="./img/jim-phelps.jpg" alt="" />
+                <figcaption><figcaption>
+              </figure>
+              <div class="profile__main">
+                <input type="checkbox" id="hvt-state7"
+                 class="state-store" />
+
+                <h3>Jim Phelps</h3>
+                <blockquote class="profile__details">
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <cite>
+                    <a href="*" target="_blank">wiki</a>
+                  </cite>
+                </blockquote>
+
+                <label class="read-more" for="hvt-state7"/>
+                </label>
+              </div>
+            </section>
+
+            <section id="hvt-8" class="profile profile8">
+              <figure class="profile__banner">
+                <img class="responsive-img"
+                 src="./img/sean-ambrose.jpg" alt="" />
+                <figcaption><figcaption>
+              </figure>
+              <div class="profile__main">
+                <input type="checkbox" id="hvt-state8"
+                 class="state-store" />
+
+                <h3>Sean Ambrose</h3>
+                <blockquote class="profile__details">
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <cite>
+                    <a href="*" target="_blank">wiki</a>
+                  </cite>
+                </blockquote>
+
+                <label class="read-more" for="hvt-state8"/>
+                </label>
+              </div>
+            </section>
           </div>
         </section>
 
-        <section id="operator-3">
-          <figure>
-            <img src="" alt="" />
-            <figcaption><figcaption>
-          </figure>
-          <div>
-            <h3>Operator</h3>
-            <blockquote>
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
+        <section id="poi" class="info-card">
+          <input id="poi-expand" type="checkbox"
+           class="state-store" />
+          <h2 class="info-card__header">
+            <label class="info-card__toggle" for="poi-expand">
+              Persons Of Interest
+            </label>
+          </h2>
+          <div class="info-card__content">
+            <!-- profile display state-cluster -->
+              <input name="profile-display-state-cluster"
+               id="display-state2-1" class="state-store display-state1"
+               type="radio"/>
+              <input name="profile-display-state-cluster"
+               id="display-state2-2" class="state-store display-state2"
+               type="radio"/>
+              <input name="profile-display-state-cluster"
+               id="display-state2-3" class="state-store display-state3"
+               type="radio"/>
+              <input name="profile-display-state-cluster"
+               id="display-state2-4" class="state-store display-state4"
+               type="radio"/>
+              <input name="profile-display-state-cluster"
+               id="display-state2-5" class="state-store display-state5"
+               type="radio"/>
+            <!-- profile display state-cluster -->
 
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
+            <div class="scroll-window">
+              <ul class="profile-list">
+                <li class="profile-list__item poi-1-link">
+                  <a class="profile-link nav-item nav-link"
+                   href="#poi-1">
+										Willian Brandt
+                  </a>
+                  <label for="display-state2-1" class="nav-item">
+										Willian Brandt
+                  </label>
+                </li>
+                <li class="profile-list__item poi-2-link">
+                  <a class="profile-link nav-item nav-link"
+                   href="#poi-2">
+										Julia
+                  </a>
+                  <label for="display-state2-2" class="nav-item">
+										Julia
+                  </label>
+                </li>
+                <li class="profile-list__item poi-3-link">
+                  <a class="profile-link nav-item nav-link"
+                   href="#poi-3">
+										Lindsey Farris
+                  </a>
+                  <label for="display-state2-3" class="nav-item">
+										Lindsey Farris
+                  </label>
+                </li>
+                <li class="profile-list__item poi-4-link">
+                  <a class="profile-link nav-item nav-link"
+                   href="#poi-4">
+										Nyah Nordoff-Hall
+                  </a>
+                  <label for="display-state2-4" class="nav-item">
+										Nyah Nordoff-Hall
+                  </label>
+                </li>
+                <li class="profile-list__item poi-5-link">
+                  <a class="profile-link nav-item nav-link"
+                   href="#poi-5">
+										Jane Carter
+                  </a>
+                  <label for="display-state2-5" class="nav-item">
+										Jane Carter
+                  </label>
+                </li>
+              </ul>
+            </div>
 
-              <cite>
-                <a href="*" target="_blank">wiki</a>
-              </cite>
-            <blockquote>
+            <section id="poi-1" class="profile profile1">
+              <figure class="profile__banner">
+                <img class="responsive-img"
+                 src="./img/william-brandt.jpg" alt="" />
+                <figcaption><figcaption>
+              </figure>
+              <div class="profile__main">
+                <input type="checkbox" id="poi-state1"
+                 class="state-store" />
+
+                <h3>William Brandt</h3>
+                <blockquote class="profile__details">
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <cite>
+                    <a href="#" target="_blank">wiki</a>
+                  </cite>
+                </blockquote>
+
+                <label class="read-more" for="poi-state1"/>
+                </label>
+              </div>
+            </section>
+
+            <section id="poi-2" class="profile profile2">
+              <figure class="profile__banner">
+                <img class="responsive-img"
+                 src="./img/julia.jpg" alt="" />
+                <figcaption><figcaption>
+              </figure>
+              <div class="profile__main">
+                <input type="checkbox" id="poi-state2"
+                 class="state-store" />
+
+                <h3>Julia</h3>
+                <blockquote class="profile__details">
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <cite>
+                    <a href="*" target="_blank">wiki</a>
+                  </cite>
+                </blockquote>
+
+                <label class="read-more" for="poi-state2"/>
+                </label>
+              </div>
+            </section>
+
+            <section id="poi-3" class="profile profile3">
+              <figure class="profile__banner">
+                <img class="responsive-img"
+                 src="./img/lindsey-farris.jpg" alt="" />
+                <figcaption><figcaption>
+              </figure>
+              <div class="profile__main">
+                <input type="checkbox" id="poi-state3"
+                 class="state-store" />
+
+                <h3>Lindsey Farris</h3>
+                <blockquote class="profile__details">
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <cite>
+                    <a href="*" target="_blank">wiki</a>
+                  </cite>
+                </blockquote>
+
+                <label class="read-more" for="poi-state3"/>
+                </label>
+              </div>
+            </section>
+
+            <section id="poi-4" class="profile profile4">
+              <figure class="profile__banner">
+                <img class="responsive-img"
+                 src="./img/nyah-nardoff-hall.jpg" alt="" />
+                <figcaption><figcaption>
+              </figure>
+              <div class="profile__main">
+                <input type="checkbox" id="poi-state4"
+                 class="state-store" />
+
+                <h4>Nyah Nardoff-Hall</h4>
+                <blockquote class="profile__details">
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <cite>
+                    <a href="*" target="_blank">wiki</a>
+                  </cite>
+                </blockquote>
+
+                <label class="read-more" for="poi-state4"/>
+                </label>
+              </div>
+            </section>
+
+            <section id="poi-5" class="profile profile5">
+              <figure class="profile__banner">
+                <img class="responsive-img"
+                 src="./img/jane-carter.jpg" alt="" />
+                <figcaption><figcaption>
+              </figure>
+              <div class="profile__main">
+                <input type="checkbox" id="poi-state5"
+                 class="state-store" />
+
+                <h3>Nyah Nardoff-Hall</h3>
+                <blockquote class="profile__details">
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <cite>
+                    <a href="#" target="_blank">wiki</a>
+                  </cite>
+                </blockquote>
+
+                <label class="read-more" for="poi-state5"/>
+                </label>
+              </div>
+            </section>
           </div>
         </section>
 
-        <section id="operator-4">
-          <figure>
-            <img src="" alt="" />
-            <figcaption><figcaption>
-          </figure>
-          <div>
-            <h3>Operator</h3>
-            <blockquote>
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
+        <section id="wmd" class="info-card">
+          <input id="wmd-expand" type="checkbox"
+           class="state-store" />
+          <h2 class="info-card__header">
+            <label class="info-card__toggle" for="wmd-expand">
+              Recovered Weapons of Mass Destruction
+            </label>
+          </h2>
+          <div class="info-card__content">
+            <!-- profile display state-cluster -->
+              <input name="profile-display-state-cluster"
+               id="display-state3-1" class="state-store display-state1"
+               type="radio"/>
+              <input name="profile-display-state-cluster"
+               id="display-state3-2" class="state-store display-state2"
+               type="radio"/>
+              <input name="profile-display-state-cluster"
+               id="display-state3-3" class="state-store display-state3"
+               type="radio"/>
+              <input name="profile-display-state-cluster"
+               id="display-state3-4" class="state-store display-state4"
+               type="radio"/>
+            <!-- profile display state-cluster -->
 
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
+            <div class="scroll-window">
+              <ul class="profile-list">
+                <li class="profile-list__item wmd-1-link">
+                  <a class="profile-link nav-item nav-link"
+                   href="#wmd-1">
+										Chimera
+                  </a>
+                  <label for="display-state3-1" class="nav-item">
+										Chimera
+                  </label>
+                </li>
+                <li class="profile-list__item wmd-2-link">
+                  <a class="profile-link nav-item nav-link"
+                   href="#wmd-2">
+										Rabbits Foot
+                  </a>
+                  <label for="display-state3-2" class="nav-item">
+										Rabbits Foot
+                  </label>
+                </li>
+                <li class="profile-list__item wmd-3-link">
+                  <a class="profile-link nav-item nav-link"
+                   href="#wmd-3">
+										Nuclear Submarine
+                  </a>
+                  <label for="display-state3-3" class="nav-item">
+										Nuclear Submarine
+                  </label>
+                </li>
+                <li class="profile-list__item wmd-4-link">
+                  <a class="profile-link nav-item nav-link"
+                   href="#wmd-4">
+										Portable Nuclear Device
+                  </a>
+                  <label for="display-state3-4" class="nav-item">
+										Portable Nuclear Device
+                  </label>
+                </li>
+              </ul>
+            </div>
 
-              <cite>
-                <a href="#" target="_blank">wiki</a>
-              </cite>
-            <blockquote>
-          </div>
-        </section>
-      </section>
+            <section id="wmd-1" class="profile profile1">
+              <figure class="profile__banner">
+                <img class="responsive-img"
+                 src="./img/chimera.jpg" alt="" />
+                <figcaption><figcaption>
+              </figure>
+              <div class="profile__main">
+                <input type="checkbox" id="wmd-state1"
+                 class="state-store" />
 
-      <section id="hvt" class="">
-        <h2>High Value Targets</h2>
-        <ul>
-          <li><a href="#target-1">Target</a></li>
-          <li><a href="#target-2">Target</a></li>
-          <li><a href="#target-3">Target</a></li>
-          <li><a href="#target-4">Target</a></li>
-        </ul>
-        <section id="target-1">
-          <figure>
-            <img src="" alt="" />
-            <figcaption><figcaption>
-          </figure>
-          <div>
-            <h3>Target</h3>
-            <blockquote>
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
+                <h3>Chimera</h3>
+                <blockquote class="profile__details">
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
 
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
 
-              <cite>
-                <a href="#" target="_blank">wiki</a>
-              </cite>
-            <blockquote>
-          </div>
-        </section>
+                  <cite>
+                    <a href="*" target="_blank">wiki</a>
+                  </cite>
+                </blockquote>
 
-        <section id="target-2">
-          <figure>
-            <img src="" alt="" />
-            <figcaption><figcaption>
-          </figure>
-          <div>
-            <h3>Target</h3>
-            <blockquote>
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
+                <label class="read-more" for="wmd-state1"/>
+                </label>
+              </div>
+            </section>
 
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
+            <section id="wmd-2" class="profile profile2">
+              <figure class="profile__banner">
+                <img class="responsive-img"
+                 src="./img/rabbits-foot.png" alt="" />
+                <figcaption><figcaption>
+              </figure>
+              <div class="profile__main">
+                <input type="checkbox" id="wmd-state2"
+                 class="state-store" />
 
-              <cite>
-                <a href="#" target="_blank">wiki</a>
-              </cite>
-            <blockquote>
-          </div>
-        </section>
+                <h3>Rabbits Foot</h3>
+                <blockquote class="profile__details">
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
 
-        <section id="target-3">
-          <figure>
-            <img src="" alt="" />
-            <figcaption><figcaption>
-          </figure>
-          <div>
-            <h3>Target</h3>
-            <blockquote>
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
 
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
+                  <cite>
+                    <a href="*" target="_blank">wiki</a>
+                  </cite>
+                </blockquote>
 
-              <cite>
-                <a href="#" target="_blank">wiki</a>
-              </cite>
-            <blockquote>
-          </div>
-        </section>
+                <label class="read-more" for="wmd-state2"/>
+                </label>
+              </div>
+            </section>
 
-        <section id="target-4">
-          <figure>
-            <img src="" alt="" />
-            <figcaption><figcaption>
-          </figure>
-          <div>
-            <h3>Target</h3>
-            <blockquote>
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
+            <section id="wmd-3" class="profile profile3">
+              <figure class="profile__banner">
+                <img class="responsive-img"
+                 src="./img/delta-3-submarine.jpg" alt="" />
+                <figcaption><figcaption>
+              </figure>
+              <div class="profile__main">
+                <input type="checkbox" id="wmd-state3"
+                 class="state-store" />
 
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
+                <h3>Delta 3 Class Nuclear Submarine</h3>
+                <blockquote class="profile__details">
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
 
-              <cite>
-                <a href="#" target="_blank">wiki</a>
-              </cite>
-            <blockquote>
-          </div>
-        </section>
-      </section>
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
 
-      <section id="poi" class="">
-        <h2>Person Of Interest</h2>
-        <ul>
-          <li><a href="#poi-1">POI</a></li>
-          <li><a href="#poi-2">POI</a></li>
-          <li><a href="#poi-3">POI</a></li>
-          <li><a href="#poi-4">POI</a></li>
-        </ul>
-        <section id="poi-1">
-          <figure>
-            <img src="" alt="" />
-            <figcaption><figcaption>
-          </figure>
-          <div>
-            <h3>POI</h3>
-            <blockquote>
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
+                  <cite>
+                    <a href="*" target="_blank">wiki</a>
+                  </cite>
+                </blockquote>
 
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
+                <label class="read-more" for="wmd-state3"/>
+                </label>
+              </div>
+            </section>
 
-              <cite>
-                <a href="#" target="_blank">wiki</a>
-              </cite>
-            <blockquote>
+            <section id="wmd-4" class="profile profile4">
+              <figure class="profile__banner">
+                <img class="responsive-img"
+                 src="./img/portable-nuclear-device.jpg" alt="" />
+                <figcaption><figcaption>
+              </figure>
+              <div class="profile__main">
+                <input type="checkbox" id="wmd-state4"
+                 class="state-store" />
+
+                <h3>Portable Nuclear Device</h3>
+                <blockquote class="profile__details">
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <cite>
+                    <a href="*" target="_blank">wiki</a>
+                  </cite>
+                </blockquote>
+
+                <label class="read-more" for="wmd-state4"/>
+                </label>
+              </div>
+            </section>
           </div>
         </section>
 
-        <section id="poi-2">
-          <figure>
-            <img src="" alt="" />
-            <figcaption><figcaption>
-          </figure>
-          <div>
-            <h3>POI</h3>
-            <blockquote>
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
+        <section id="missions" class="info-card">
+          <input id="missions-expand" type="checkbox"
+           class="state-store" />
+          <h2 class="info-card__header">
+            <label class="info-card__toggle" for="missions-expand">
+              Missions
+            </label>
+          </h2>
+          <div class="info-card__content">
+            <!-- profile display state-cluster -->
+              <input name="profile-display-state-cluster"
+               id="display-state4-1" class="state-store display-state1"
+               type="radio"/>
+              <input name="profile-display-state-cluster"
+               id="display-state4-2" class="state-store display-state2"
+               type="radio"/>
+              <input name="profile-display-state-cluster"
+               id="display-state4-3" class="state-store display-state3"
+               type="radio"/>
+              <input name="profile-display-state-cluster"
+               id="display-state4-4" class="state-store display-state4"
+               type="radio"/>
+            <!-- profile display state-cluster -->
 
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
+            <div class="scroll-window">
+              <ul class="profile-list">
+                <li class="profile-list__item">
+                  <a class="profile-link nav-item nav-link"
+                   href="#mission-1">
+                    Mission
+                  </a>
+                  <label for="display-state4-1" class="nav-item">
+                    Mission
+                  </label>
+                </li>
+                <li class="profile-list__item">
+                  <a class="profile-link nav-item nav-link"
+                   href="#mission-2">
+                    Mission
+                  </a>
+                  <label for="display-state4-2" class="nav-item">
+                    Mission
+                  </label>
+                </li>
+                <li class="profile-list__item">
+                  <a class="profile-link nav-item nav-link"
+                   href="#mission-3">
+                    Mission
+                  </a>
+                  <label for="display-state4-3" class="nav-item">
+                    Mission
+                  </label>
+                </li>
+                <li class="profile-list__item">
+                  <a class="profile-link nav-item nav-link"
+                   href="#mission-4">
+                    Mission
+                  </a>
+                  <label for="display-state4-4" class="nav-item">
+                    Mission
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <section id="missions-1" class="profile profile1">
+              <figure class="profile__banner">
+                <img class="responsive-img"
+                 src="./img/profile.png" alt="" />
+                <figcaption><figcaption>
+              </figure>
+              <div class="profile__main">
+                <input type="checkbox" id="missions-state1"
+                 class="state-store" />
 
-              <cite>
-                <a href="#" target="_blank">wiki</a>
-              </cite>
-            <blockquote>
+                <h3>Mission</h3>
+                <blockquote class="profile__details">
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <cite>
+                    <a href="*" target="_blank">wiki</a>
+                  </cite>
+                </blockquote>
+
+                <label class="read-more" for="missions-state1"/>
+                </label>
+              </div>
+            </section>
+
+            <section id="missions-2" class="profile profile2">
+              <figure class="profile__banner">
+                <img class="responsive-img"
+                 src="./img/profile.png" alt="" />
+                <figcaption><figcaption>
+              </figure>
+              <div class="profile__main">
+                <input type="checkbox" id="missions-state2"
+                 class="state-store" />
+
+                <h3>Mission</h3>
+                <blockquote class="profile__details">
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <cite>
+                    <a href="*" target="_blank">wiki</a>
+                  </cite>
+                </blockquote>
+
+                <label class="read-more" for="missions-state2"/>
+                </label>
+              </div>
+            </section>
+
+            <section id="missions-3" class="profile profile3">
+              <figure class="profile__banner">
+                <img class="responsive-img"
+                 src="./img/profile.png" alt="" />
+                <figcaption><figcaption>
+              </figure>
+              <div class="profile__main">
+                <input type="checkbox" id="missions-state3"
+                 class="state-store" />
+
+                <h3>Mission</h3>
+                <blockquote class="profile__details">
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <cite>
+                    <a href="*" target="_blank">wiki</a>
+                  </cite>
+                </blockquote>
+
+                <label class="read-more" for="missions-state3"/>
+                </label>
+              </div>
+            </section>
+
+            <section id="missions-4" class="profile profile4">
+              <figure class="profile__banner">
+                <img class="responsive-img"
+                 src="./img/profile.png" alt="" />
+                <figcaption><figcaption>
+              </figure>
+              <div class="profile__main">
+                <input type="checkbox" id="missions-state4"
+                 class="state-store" />
+
+                <h4>Mission</h4>
+                <blockquote class="profile__details">
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent et eros tristique, tristique enim et, fermentum
+                  risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
+                  efficitur, ut bibendum nisi scelerisque. Proin ultrices
+                  nibh in sapien lacinia pellentesque. Maecenas eleifend
+                  condimentum lectus, in sodales sapien ultricies eget.
+                  Phasellus vel diam at ligula accumsan elementum non ut
+                  augue. Donec ultricies vulputate ante, a maximus lorem
+                  suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
+                  feugiat leo.
+                  </p>
+
+                  <cite>
+                    <a href="*" target="_blank">wiki</a>
+                  </cite>
+                </blockquote>
+
+                <label class="read-more" for="missions-state4"/>
+                </label>
+              </div>
+            </section>
           </div>
         </section>
+      </main>
 
-        <section id="poi-3">
-          <figure>
-            <img src="" alt="" />
-            <figcaption><figcaption>
-          </figure>
-          <div>
-            <h3>POI</h3>
-            <blockquote>
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
-
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
-
-              <cite>
-                <a href="#" target="_blank">wiki</a>
-              </cite>
-            <blockquote>
-          </div>
-        </section>
-
-        <section id="poi-4">
-          <figure>
-            <img src="" alt="" />
-            <figcaption><figcaption>
-          </figure>
-          <div>
-            <h3>POI</h3>
-            <blockquote>
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
-
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
-
-              <cite>
-                <a href="#" target="_blank">wiki</a>
-              </cite>
-            <blockquote>
-          </div>
-        </section>
-      </section>
-
-      <section id="wmd" class="">
-        <h2>Recovered Weapons of Mass Destruction</h2>
-        <ul>
-          <li><a href="#wmd-1">WMD</a></li>
-          <li><a href="#wmd-2">WMD</a></li>
-          <li><a href="#wmd-3">WMD</a></li>
-          <li><a href="#wmd-4">WMD</a></li>
-        </ul>
-        <section id="wmd-1">
-          <figure>
-            <img src="" alt="" />
-            <figcaption><figcaption>
-          </figure>
-          <div>
-            <h3>WMD</h3>
-            <blockquote>
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
-
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
-
-              <cite>
-                <a href="#" target="_blank">wiki</a>
-              </cite>
-            <blockquote>
-          </div>
-        </section>
-
-        <section id="wmd-2">
-          <figure>
-            <img src="" alt="" />
-            <figcaption><figcaption>
-          </figure>
-          <div>
-            <h3>WMD</h3>
-            <blockquote>
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
-
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
-
-              <cite>
-                <a href="#" target="_blank">wiki</a>
-              </cite>
-            <blockquote>
-          </div>
-        </section>
-
-        <section id="wmd-3">
-          <figure>
-            <img src="" alt="" />
-            <figcaption><figcaption>
-          </figure>
-          <div>
-            <h3>WMD</h3>
-            <blockquote>
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
-
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
-
-              <cite>
-                <a href="#" target="_blank">wiki</a>
-              </cite>
-            <blockquote>
-          </div>
-        </section>
-
-        <section id="wmd-4">
-          <figure>
-            <img src="" alt="" />
-            <figcaption><figcaption>
-          </figure>
-          <div>
-            <h3>WMD</h3>
-            <blockquote>
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
-
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
-
-              <cite>
-                <a href="#" target="_blank">wiki</a>
-              </cite>
-            <blockquote>
-          </div>
-        </section>
-      </section>
-
-      <section id="missions" class="">
-        <h2>Missions</h2>
-        <ul>
-          <li><a href="#mission-1">mission</a></li>
-          <li><a href="#mission-2">mission</a></li>
-          <li><a href="#mission-3">mission</a></li>
-          <li><a href="#mission-4">mission</a></li>
-        </ul>
-        <section id="mission-1">
-          <figure>
-            <img src="" alt="" />
-            <figcaption><figcaption>
-          </figure>
-          <div>
-            <h3>Mission</h3>
-            <blockquote>
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
-
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
-
-              <cite>
-                <a href="#" target="_blank">wiki</a>
-              </cite>
-            <blockquote>
-          </div>
-        </section>
-
-        <section id="mission-2">
-          <figure>
-            <img src="" alt="" />
-            <figcaption><figcaption>
-          </figure>
-          <div>
-            <h3>Mission</h3>
-            <blockquote>
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
-
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
-
-              <cite>
-                <a href="#" target="_blank">wiki</a>
-              </cite>
-            <blockquote>
-          </div>
-        </section>
-
-        <section id="mission-3">
-          <figure>
-            <img src="" alt="" />
-            <figcaption><figcaption>
-          </figure>
-          <div>
-            <h3>Mission</h3>
-            <blockquote>
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
-
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
-
-              <cite>
-                <a href="#" target="_blank">wiki</a>
-              </cite>
-            <blockquote>
-          </div>
-        </section>
-
-        <section id="mission-4">
-          <figure>
-            <img src="" alt="" />
-            <figcaption><figcaption>
-          </figure>
-          <div>
-            <h3>Mission</h3>
-            <blockquote>
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
-
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent et eros tristique, tristique enim et, fermentum
-              risus. In ac vehicula orci. Mauris rhoncus purus sed sapien
-              efficitur, ut bibendum nisi scelerisque. Proin ultrices
-              nibh in sapien lacinia pellentesque. Maecenas eleifend
-              condimentum lectus, in sodales sapien ultricies eget.
-              Phasellus vel diam at ligula accumsan elementum non ut
-              augue. Donec ultricies vulputate ante, a maximus lorem
-              suscipit eget. Donec sem ipsum, porta eu nisi a, gravida
-              feugiat leo.
-              </p>
-
-              <cite>
-                <a href="#" target="_blank">wiki</a>
-              </cite>
-            <blockquote>
-          </div>
-        </section>
-      </section>
-    </main>
-
-    <footer>
-      <div id="img-div">
-        <span id="img-caption">IMF Logo</span>
-        <img id="image" src="" alt="logo" />
-        <a target="_blank" id="tribute-link"
-				 href="http://missionimpossible.wikia.com/wiki/Main_Page">
-				  Learn More
-				</a>
-      </div>
-    </footer>
+      <footer class="footer">
+        <div id="img-div" class="img-div">
+          <span id="img-caption" class="img-caption">
+            Eat me pacman
+          </span>
+          <span class="fcc-logo">
+            <img class="responsive-img"
+             id="image" src="./img/pacman.png" alt="logo" />
+          </span>
+          <a target="_blank" id="tribute-link" class="tribute-link"
+           href="http://missionimpossible.wikia.com/wiki/Main_Page">
+           Learn more about IMF
+          </a>
+        </div>
+        <div class="credit">
+        Designed and built by Zebedee Lewis
+        </div>
+      </footer>
+    </div>
 
 
-		<!--
-		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-		-->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <script
      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -975,5 +1825,5 @@
           $('.slide-nav').toggleClass('slide-nav--collapse');
       });
     </script>
-	</body>
+  </body>
 </html>
