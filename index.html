@@ -23,65 +23,68 @@
     <link rel="stylesheet" type="text/css"
      href="interactive768p.css" />
   </head>
+
   <body>
     <div class="wrapper">
       <nav class="navigation">
-        <a class="slide-nav__ctrl--left" href="#nav">
+        <a class="nav__ctrl--left navigation__component"
+         href="#nav">
           <span class="fas fa-chevron-left"></span>
         </a>
 
-        <a class="slide-nav__ctrl--right" href="#nav">
+        <a class="nav__ctrl--right navigation__component"
+         href="#nav">
           <span class="fas fa-chevron-right"></span>
         </a>
 
-        <input id="slide-nav__ctrl--collapse" type="checkbox"
-         class="state-store slide-nav__ctrl--collapse" />
+        <input id="nav__state--collapse" type="checkbox"
+         class="state-store nav__state--collapse" />
 
-        <ul id="nav" class="slide-nav">
-          <li class="slide-nav__item">
-            <label for="info-card-state1" class="nav-item">
+        <ul id="nav" class="nav navigation__component">
+          <li class="nav__item dual-ctrl">
+            <label for="info-card-state1" class="dual-ctrl__state">
               IMF
             </label>
-            <a class="nav-item nav-link" href="#main">
+            <a class="dual-ctrl__link" href="#main">
               IMF
             </a>
           </li>
-          <li class="slide-nav__item">
-            <label for="info-card-state2" class="nav-item">
+          <li class="nav__item dual-ctrl">
+            <label for="info-card-state2" class="dual-ctrl__state">
               Operators
             </label>
-            <a class="nav-link nav-item" href="#operators">
+            <a class="dual-ctrl__link" href="#operators">
               Operators
             </a>
           </li>
-          <li class="slide-nav__item">
-            <label for="info-card-state3" class="nav-item">
+          <li class="nav__item dual-ctrl">
+            <label for="info-card-state3" class="dual-ctrl__state">
               High Value Target
             </label>
-            <a class="nav-item nav-link" href="#hvt">
+            <a class="dual-ctrl__link" href="#hvt">
               High Value Target
             </a>
           </li>
-          <li class="slide-nav__item">
-            <label for="info-card-state4" class="nav-item">
+          <li class="nav__item dual-ctrl">
+            <label for="info-card-state4" class="dual-ctrl__state">
               Persons Of Interest
             </label>
-            <a class="nav-item nav-link" href="#poi">
+            <a class="dual-ctrl__link" href="#poi">
               Persons Of Interest
             </a>
           </li>
-          <li class="slide-nav__item">
-            <label for="info-card-state5" class="nav-item">
+          <li class="nav__item dual-ctrl">
+            <label for="info-card-state5" class="dual-ctrl__state">
               Recovered WMD
             </label>
-            <a class="nav-item nav-link" href="#wmd">
+            <a class="dual-ctrl__link" href="#wmd">
               Recovered WMD
             </a>
           </li>
         </ul>
 
-        <label for="slide-nav__ctrl--collapse"
-         class="slide-nav__toggle nav-link">
+        <label for="nav__state--collapse"
+         class="nav__ctrl--toggle navigation__component">
           <span class="fas fa-bars"></span>
         </label>
       </nav>
@@ -1569,6 +1572,8 @@
       </footer>
     </div>
 
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script
+		 src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+		</script>
   </body>
 </html>
