@@ -51,7 +51,7 @@
 }
 
 
-.slide-nav--collapse {
+.slide-nav__ctrl--collapse:checked ~ .slide-nav {
   left: -100%;
 }
 
