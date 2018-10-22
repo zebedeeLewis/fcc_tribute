@@ -1,0 +1,246 @@
+
+
+.navigation {
+  /*
+  --light-slate-grey: hsla(210, 14%, 53%, 1);
+  --primary-color: black;
+  --secondary-color: red;
+  --tertiary-color: blue;
+  --primary-font-color: var(--light-slate-grey);
+
+  --default-shadow-color: var(--dark-slate-grey);
+  --primary-shadow-color: var(--secondary-color);
+
+  --shadow-one: 0.1rem 0rem 1.5rem var(--primary-shadow-color);
+  --default-shadow: 3rem 0rem 5rem var(--primary-color);
+  */
+
+
+  --spacing1: 0.5rem;
+  --spacing2: 1rem;
+
+  display: flex;
+
+  box-sizing: border-box;
+  z-index: 4;
+}
+
+
+.navigation__component { display: flex; }
+
+
+.nav {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+
+.nav__item {
+  box-sizing: border-box;
+  padding-left: var(--spacing1);
+  display: flex;
+  align-items: stretch;
+}
+
+
+.nav-content--state,
+.nav-content--link {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  color: var(--primary-font-color);
+}
+
+
+.nav-content--state:hover,
+.nav-content--state:focus,
+.nav-content--state:active,
+.nav__ctrl--slide-right:hover,
+.nav__ctrl--slide-right:focus,
+.nav__ctrl--slide-right:active,
+.nav__ctrl--slide-left:hover,
+.nav__ctrl--slide-left:focus,
+.nav__ctrl--slide-left:active,
+.nav-content--link:hover,
+.nav-content--link:focus,
+.nav-content--link:active {
+  color: var(--tertiary-color);
+}
+
+.nav-content--link { text-decoration: none; }
+
+
+@media (max-width: 767px) {
+  .navigation {
+    width: 100%;
+    height: 1px;
+
+    position: fixed;
+  }
+
+
+  /*
+   * At this screen size the only two sub-components should be
+   * visible. Ideally the nav itself and the menu hamburger.
+   *
+   */
+
+  .nav__state--collapse:checked ~ .nav { left: -100%; }
+
+  .nav {
+    width: 30rem;
+    height: 100vh;
+    margin: 0;
+    flex: 0 1 auto;
+
+    box-shadow: var(--shadow-one), var(--default-shadow);
+
+    flex-direction: column;
+    justify-content: flex-start;
+
+    position: relative;
+    left: 0;
+
+    background: url("./img/logo.png"),
+                url("./img/carbon_bg.gif");
+    background-size: 80%, cover;
+    background-repeat: no-repeat, repeat;
+    background-position: center 80%, center;
+
+    transition-property: left;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+  }
+
+
+  .nav__item {
+    flex: 0 1 2.5rem;
+    list-style-type: none;
+  }
+
+
+  .nav-content--state { display: none; }
+
+
+  .nav__ctrl--toggle {
+    box-sizing: border-box;
+    padding-left: var(--spacing2);
+    margin: var(--spacing1) var(--spacing1) 0 auto;
+
+    font-size: 150%;
+  }
+
+
+  .nav__ctrl--slide-left,
+  .nav__ctrl--slide-right {
+    display: none;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .navigation {
+    height: 12rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: flex-end;
+    overflow-x: hidden;
+
+    position: relative;
+  }
+
+
+  .nav__ctrl--slide-left,
+  .nav__ctrl--slide-right {
+    height: 100%;
+    width: 8rem;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    text-decoration: none;
+    font-size: 200%;
+    color: var(--primary-font-color);
+
+    z-index: 2;
+  }
+
+
+  .nav__ctrl--slide-left {
+    background: linear-gradient(90deg,
+                                hsla(0, 0%, 0%, 1),
+                                hsla(0, 0%, 0%, 0));
+  }
+
+
+  .nav__ctrl--slide-right {
+    right: 0;
+    background: linear-gradient(270deg,
+                                hsla(0, 0%, 0%, 1),
+                                hsla(0, 0%, 0%, 0));
+  }
+
+
+  .nav__ctrl--slide-right:active ~ .nav,
+  .nav__ctrl--slide-left:active ~ .nav .nav__item {
+    animation-play-state: running;
+  }
+
+
+  .nav,
+  .nav__item {
+    position: relative;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+  }
+
+
+  .nav {
+    margin: 0 0 var(--spacing1) 0;
+    align-items: flex-end;
+    animation-name: slide-right;
+  }
+
+
+  .nav__item {
+    height: 8rem;
+    margin-left: var(--spacing2);
+    flex: 0 0 20rem;
+    background: url("./img/rogue-nation.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.6;
+    animation-name: slide-left;
+    box-shadow: 0.1rem 0.2rem 0.5rem var(--primary-shadow-color);
+  }
+
+
+  .nav__item:hover,
+  .nav__item:active,
+  .nav__item:focus {
+    height: 10rem;
+  }
+
+  .nav-content--link { display: none; }
+
+  .nav-content--state { justify-content: center; }
+
+  .nav__ctrl--toggle { display: none; }
+}
+
+
+@keyframes slide-left {
+  from {left: 0rem;}
+  to {left: 500rem;}
+}
+
+
+@keyframes slide-right {
+  from {left: 0rem;}
+  to {left: -500rem;}
+}

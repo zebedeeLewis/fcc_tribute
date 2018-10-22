@@ -1,41 +1,5 @@
 
 @media (min-width: 768px) {
-  .slide-nav__item {
-    transition-property: height;
-    transition-duration: 0.5s;
-    position: relative;
-    animation-name: right;
-  }
-
-
-  .slide-nav__item:hover,
-  .slide-nav__item:active {
-    height: 10em;
-  }
-
-
-  .slide-nav,
-  .slide-nav__item {
-    animation-duration: 1s;
-    animation-play-state: paused;
-    animation-timing-function: linear;
-		animation-iteration-count: infinite;
-  }
-
-
-  .slide-nav { animation-name: left; }
-
-  
-  .slide-nav__ctrl--left:active ~ .slide-nav {
-    animation-play-state: running;
-  }
-
-
-  .slide-nav__ctrl--right:active ~ .slide-nav .slide-nav__item {
-    animation-play-state: running;
-  }
-
-
   .info-card,
   .tribute-intro {
     display: none;
