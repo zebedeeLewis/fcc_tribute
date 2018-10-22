@@ -88,7 +88,7 @@
    *
    */
 
-  .nav__state--collapse:checked ~ .nav { left: -100%; }
+  .nav__state--visibility:checked ~ .nav { left: -100%; }
 
   .nav {
     width: 30rem;
@@ -125,7 +125,7 @@
   .nav-content--state { display: none; }
 
 
-  .nav__ctrl--toggle {
+  .nav__ctrl--toggle-visibility {
     box-sizing: border-box;
     padding-left: var(--spacing2);
     margin: var(--spacing1) var(--spacing1) 0 auto;
@@ -230,7 +230,7 @@
 
   .nav-content--state { justify-content: center; }
 
-  .nav__ctrl--toggle { display: none; }
+  .nav__ctrl--toggle-visibility { display: none; }
 }
 
 
