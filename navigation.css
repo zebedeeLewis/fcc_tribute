@@ -3,21 +3,9 @@
 .navigation {
   /*
   --light-slate-grey: hsla(210, 14%, 53%, 1);
-  --primary-color: black;
-  --secondary-color: red;
-  --tertiary-color: blue;
+  --primary-color: blue;
   --primary-font-color: var(--light-slate-grey);
-
-  --default-shadow-color: var(--dark-slate-grey);
-  --primary-shadow-color: var(--secondary-color);
-
-  --shadow-one: 0.1rem 0rem 1.5rem var(--primary-shadow-color);
-  --default-shadow: 3rem 0rem 5rem var(--primary-color);
   */
-
-
-  --spacing1: 0.5rem;
-  --spacing2: 1rem;
 
   display: flex;
 
@@ -27,50 +15,6 @@
 
 
 .navigation__component { display: flex; }
-
-
-.nav {
-  box-sizing: border-box;
-  padding: 0;
-}
-
-
-.nav__item {
-  box-sizing: border-box;
-  padding-left: var(--spacing1);
-  display: flex;
-  align-items: stretch;
-}
-
-
-.nav-content--state,
-.nav-content--link {
-  box-sizing: border-box;
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-
-  color: var(--primary-font-color);
-}
-
-
-.nav-content--state:hover,
-.nav-content--state:focus,
-.nav-content--state:active,
-.nav__ctrl--slide-right:hover,
-.nav__ctrl--slide-right:focus,
-.nav__ctrl--slide-right:active,
-.nav__ctrl--slide-left:hover,
-.nav__ctrl--slide-left:focus,
-.nav__ctrl--slide-left:active,
-.nav-content--link:hover,
-.nav-content--link:focus,
-.nav-content--link:active {
-  color: var(--tertiary-color);
-}
-
-.nav-content--link { text-decoration: none; }
 
 
 @media (max-width: 767px) {
@@ -88,10 +32,10 @@
    *
    */
 
-  .nav__state--visibility:checked ~ .nav { left: -100%; }
+  .nav__state--visibility:checked ~ .list--nav { left: 0; }
 
-  .nav {
-    width: 30rem;
+  .list--nav {
+    width: 20rem;
     height: 100vh;
     margin: 0;
     flex: 0 1 auto;
@@ -102,11 +46,11 @@
     justify-content: flex-start;
 
     position: relative;
-    left: 0;
+    left: -100%;
 
     background: url("./img/logo.png"),
                 url("./img/carbon_bg.gif");
-    background-size: 80%, cover;
+    background-size: 80%, auto;
     background-repeat: no-repeat, repeat;
     background-position: center 80%, center;
 
@@ -116,13 +60,10 @@
   }
 
 
-  .nav__item {
+  .list--nav__item {
     flex: 0 1 2.5rem;
     list-style-type: none;
   }
-
-
-  .nav-content--state { display: none; }
 
 
   .nav__ctrl--toggle-visibility {
@@ -143,10 +84,8 @@
 
 @media (min-width: 768px) {
   .navigation {
-    height: 12rem;
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: var(--spacing2) auto var(--spacing2) auto;
     align-items: flex-end;
     overflow-x: hidden;
 
@@ -158,8 +97,9 @@
   .nav__ctrl--slide-right {
     height: 100%;
     width: 8rem;
+    padding-bottom: var(--spacing1);
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     position: absolute;
     text-decoration: none;
     font-size: 200%;
@@ -184,14 +124,14 @@
   }
 
 
-  .nav__ctrl--slide-right:active ~ .nav,
-  .nav__ctrl--slide-left:active ~ .nav .nav__item {
+  .nav__ctrl--slide-right:active ~ .list--nav,
+  .nav__ctrl--slide-left:active ~ .list--nav .list--nav__item {
     animation-play-state: running;
   }
 
 
-  .nav,
-  .nav__item {
+  .list--nav,
+  .list--nav__item {
     position: relative;
     animation-duration: 10s;
     animation-timing-function: linear;
@@ -200,35 +140,46 @@
   }
 
 
-  .nav {
-    margin: 0 0 var(--spacing1) 0;
+  .list--nav {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 0.7rem;
     align-items: flex-end;
     animation-name: slide-right;
   }
 
 
-  .nav__item {
-    height: 8rem;
+  .list--nav__item {
+    box-sizing: border-box;
+    height: 40%;
     margin-left: var(--spacing2);
+    border-top-style: solid;
+    border-width: 0.1rem;
+    border-color: var(--primary-color);
+    border-top-left-radius: 0.2rem;
+    border-top-right-radius: 0.2rem;
     flex: 0 0 20rem;
-    background: url("./img/rogue-nation.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    opacity: 0.6;
+    opacity: 0.8;
     animation-name: slide-left;
+	transition-property: height;
+	transition-duration: 0.3s;
+  }
+
+
+  .list--nav__item:hover,
+  .list--nav__item:active,
+  .list--nav__item:focus {
+    height: 75%;
+    background: linear-gradient(0deg,
+                                hsla(0, 0%, 0%, 0.8),
+                                hsla(0, 0%, 0%, 0.8)),
+                                url("./img/rogue-nation.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    position: relative;
     box-shadow: 0.1rem 0.2rem 0.5rem var(--primary-shadow-color);
   }
-
-
-  .nav__item:hover,
-  .nav__item:active,
-  .nav__item:focus {
-    height: 10rem;
-  }
-
-  .nav-content--link { display: none; }
-
-  .nav-content--state { justify-content: center; }
 
   .nav__ctrl--toggle-visibility { display: none; }
 }

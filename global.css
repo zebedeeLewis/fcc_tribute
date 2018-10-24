@@ -1,0 +1,271 @@
+
+
+:root {
+  --alpha-light: 0.3;
+  --alpha-half: 0.5;
+  --alpha-full: 0.8;
+
+  --lime: hsla(120, 100%, 50%, 1);
+  --hsla-lime-light: hsla(120, 100%, 50%, var(--alpha-light));
+  --hsla-lime-half: hsla(120, 100%, 50%, var(--alpha-half));
+  --hsla-lime-full: hsla(120, 100%, 50%, var(--alpha-full));
+
+  --orange-red: hsla(16, 100%, 50%, 1);
+  --hsla-orange-red-light: hsla(16, 100%, 50%, var(--alpha-light));
+  --hsla-orange-red-half: hsla(16, 100%, 50%, var(--alpha-half));
+  --hsla-orange-red-full: hsla(16, 100%, 50%, var(--alpha-full));
+
+  --hsla-blue-light: hsla(240, 100%, 50%, var(--alpha-light));
+  --hsla-blue-half: hsla(240, 100%, 50%, var(--alpha-half));
+  --hsla-blue-full: hsla(240, 100%, 50%, var(--alpha-full));
+
+  --light-slate-grey: hsla(210, 14%, 53%, 1);
+  --hsla-red-half: hsla(0, 100%, 50%, var(--alpha-half));
+  --dark-slate-grey: hsla(180, 25%, 25%, 1);
+  --primary-font-color: var(--light-slate-grey);
+  --tertiary-color: var(--hsla-blue-full);
+  --secondary-color: var(--orange-red);
+  --primary-color: var(--hsla-lime-half);
+
+  --spacing1: 0.5rem;
+  --spacing2: 1rem;
+  --spacing3: 1.5rem;
+  --spacing4: 2rem;
+  --spacing6: 3rem;
+  --spacing8: 4rem;
+
+  --default-shadow-color: var(--dark-slate-grey);
+  --primary-shadow-color: var(--tertiary-color);
+  --shadow-one: 0.1rem 0rem 1.5rem var(--primary-shadow-color);
+  --default-shadow: 3rem 0rem 5rem black;
+
+  /*
+   * Responsive Font Size Calculations
+   * All values are in rem units
+   *
+   */
+
+  --min-font-size: 0.88;
+  --max-font-size: 1.0;
+  --font-size-diff: calc( var(--max-font-size) -
+                          var(--min-font-size) );
+  --min-vw: 20;
+  --max-vw: 160;
+  --vw-diff: calc( var(--max-vw) - var(--min-vw) );
+  --font-size: calc( var(--min-font-size)*1rem +
+                     var(--font-size-diff)*
+                     ((100vw - var(--min-vw)*1rem)/var(--vw-diff))
+                     );
+}
+
+body {
+  font-size: var(--font-size);
+  font-family: sans-serif;
+  color: var(--primary-font-color);
+}
+
+h1,h2,h3 {
+  margin-bottom: var(--spacing2);
+}
+
+p {
+  margin-top: var(--spacing2);
+  margin-bottom: var(--spacing2);
+}
+
+[class*="__state--"] {
+  display: none;
+}
+
+.fluid-container {
+  display: flex;
+  align-items: stretch;
+}
+
+.fluid-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.responsive-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+.wrapper::before {
+  content: " ";
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+
+  background: linear-gradient(0deg,
+                              hsla(0, 0%, 0%, 1),
+                              hsla(0, 0%, 0%, 0.7) ),
+              url("./img/ethan-bg.jpg");
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0;
+
+  z-index: 1;
+}
+
+
+.nav {
+  z-index: 4;
+}
+
+.field {
+  display: flex;
+  flex-wrap: wrap;
+  padding: var(--spacing1);
+}
+
+.field__name {
+  flex: 0 0 auto;
+}  
+
+.field__value {
+  color: var(--primary-color);
+  flex: 0 1 auto;
+  margin-left: auto;
+}
+
+.main {
+  --spacing2: 1rem;
+  --spacing1: 0.5rem;
+  --spacing6: 3rem;
+
+  width: inherit;
+  padding-top: var(--spacing1);
+  z-index: 2;
+}
+
+
+.list--nav,
+.list {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+
+.list__item,
+[class*="list--"][class*="__item"] {
+  box-sizing: border-box;
+  padding-left: var(--spacing1);
+  display: flex;
+}
+
+[class*="__ctrl--"],
+[class*="list--"][class*="__content"] {
+  color: var(--primary-font-color);
+}
+
+.list__content--link,
+[class*="list--"][class*="__content--link"] {
+  text-decoration: none;
+}
+
+[class*="__ctrl--"]:active,
+[class*="list--"][class*="__content"]:active,
+[class*="__ctrl--"]:focus,
+[class*="list--"][class*="__content"]:focus,
+[class*="__ctrl--"]:hover,
+[class*="list--"][class*="__content"]:hover {
+  color: var(--secondary-color);
+}
+
+.footer {
+  --spacing2: 1.0rem;
+  --spacing3: 1.5rem;
+
+  box-sizing: border-box;
+  padding: var(--spacing2)
+           var(--spacing3)
+           0
+           var(--spacing3);
+  width: 100%;
+  z-index: 3;
+}
+
+.img-div {
+  display: flex;
+  justify-content: center;
+}
+
+.img-caption,
+.tribute-link {
+  flex: 0 1 auto; 
+}
+
+.fcc-logo {
+  text-align: center;
+  flex: 0 1 6rem;
+  margin-left: var(--spacing2);
+  margin-right: var(--spacing2);
+}
+
+.credit {
+  padding-top: var(--spacing3);
+  padding-bottom: var(--spacing1);
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .list__content--toggle,
+  [class*="list--"][class*="__content--toggle"] {
+    display: none;
+  }
+
+  [class*="list--"][class*="__content"] {
+    justify-content: flex-start;
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    height: 100vh;
+    justify-content: flex-end;
+  }
+  
+  .wrapper::before {
+    background-size: 100%, 40rem;
+    background-position: 0 0, 0;
+  }
+
+  .list__content--link,
+  [class*="list--"][class*="__content--link"] {
+    display: none;
+  }
+
+  .navigation {
+    order: 2;
+    height: 15%;
+  }
+
+  .main {
+    order: 1;
+    height: 70%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer {
+    order: 3;
+    height: 15%;
+  }
+}
