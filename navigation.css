@@ -93,6 +93,8 @@
   }
 
 
+  .slide-limiter--left,
+  .slide-limiter--right,
   .nav__ctrl--slide-left,
   .nav__ctrl--slide-right {
     height: 100%;
@@ -102,6 +104,46 @@
     align-items: flex-end;
     position: absolute;
     text-decoration: none;
+    animation-duration: 400s;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+
+
+  .slide-limiter--left,
+  .slide-limiter--right {
+    animation-name: lift-limiter;
+  }
+
+
+  .nav__ctrl--slide-left,
+  .nav__ctrl--slide-right {
+    animation-name: lift-ctrl;
+  }
+
+
+  .nav__ctrl--slide-right,
+  .slide-limiter--right {
+    right: 0;
+  }
+
+
+  #slide-limiter--right__state--lift:active ~ 
+      .nav__ctrl--slide-left,
+  #slide-limiter--right__state--lift:active ~
+      .slide-limiter--right,
+  #slide-limiter--left__state--lift:active ~ 
+      .nav__ctrl--slide-right,
+  #slide-limiter--left__state--lift:active ~
+      .slide-limiter--left {
+    animation-play-state: running;
+  }
+
+
+  .nav__ctrl--slide-left,
+  .nav__ctrl--slide-right {
     font-size: 200%;
     color: var(--primary-font-color);
 
@@ -117,7 +159,6 @@
 
 
   .nav__ctrl--slide-right {
-    right: 0;
     background: linear-gradient(270deg,
                                 hsla(0, 0%, 0%, 1),
                                 hsla(0, 0%, 0%, 0));
@@ -161,8 +202,8 @@
     flex: 0 0 20rem;
     opacity: 0.8;
     animation-name: slide-left;
-	transition-property: height;
-	transition-duration: 0.3s;
+    transition-property: height;
+    transition-duration: 0.3s;
   }
 
 
@@ -194,4 +235,15 @@
 @keyframes slide-right {
   from {left: 0rem;}
   to {left: -500rem;}
+}
+
+
+@keyframes lift-limiter {
+  from {z-index: 0; }
+  to {z-index: 9979; }
+}
+
+@keyframes lift-ctrl {
+  from {z-index: 20; }
+  to {z-index: 9999; }
 }
