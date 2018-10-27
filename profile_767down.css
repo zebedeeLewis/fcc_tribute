@@ -1,0 +1,23 @@
+@media (max-width: 767px) {
+  .profile {
+    margin-top: var(--spacing4);
+  }
+
+  .list--profile {
+    border-bottom-radius: 0.3rem;
+  }
+
+  [class*="list--profile__item--"] {
+    padding-top: var(--spacing1);
+    padding-bottom: var(--spacing1);
+  }
+
+  [class*="list--profile__item--"]:hover,
+  [class*="list--profile__item--"]:active,
+  [class*="list--profile__item--"]:focus {
+    background: linear-gradient(180deg,
+                               hsla(240, 100%, 50%, 1),
+                               hsla(240, 100%, 50%, 0));
+  }
+
+}

@@ -1,0 +1,14 @@
+@media (min-width: 768px) {
+  .panel__header {
+    width: 20rem;
+    margin-left: auto;
+  }
+  .panel__content {
+    max-height: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    overflow-y: auto;
+  }
+}

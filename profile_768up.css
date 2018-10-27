@@ -1,0 +1,141 @@
+@media (min-width: 768px) {
+  .profile {
+    order: 1;
+    margin-top: 0.5rem;
+    padding-left: var(--spacing2);
+    padding-right: var(--spacing4);
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+  }
+
+  .profile__state--visibility:not(:checked) + .profile { 
+    display: none;
+    overflow: hidden;
+    width: 0%;
+  }
+
+  .profile,
+  .list--profile {
+    opacity: 0.4;
+  }
+
+  .profile:hover, .profile:active,
+  .list--profile:hover, .list--profile:active {
+    opacity: 1;
+  }
+
+  .profile__state--visibility:checked + .profile { 
+    flex: 0 1 auto;
+    animation-name: expand-profile;
+  }
+
+  .list--profile {
+    width: 20rem;
+    flex: 0 0 auto;
+    order: 2;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  [class*="list--profile__item--"] {
+    width: 8rem;
+    height: 13rem;
+    margin: 0.5rem;
+    flex: 0 0 auto;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  [class*="list--profile__item--"]::before {
+    content: " ";
+    width: 100%;
+    height: 10rem;
+    border-radius: 0.3rem;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    z-index: 1;
+  }
+
+  [class*="list--profile__content--"] {
+    z-index: 2;
+    align-items: flex-end;
+  }
+
+  .list--profile__item--ethan::before {
+    background-image: url("./img/ethan-hunt.jpg");
+  }
+  .list--profile__item--luther::before {
+    background-image: url("./img/luther-stickell.jpg");
+  }
+  .list--profile__item--benji::before {
+    background-image: url("./img/benji-dunn.jpg");
+  }
+  .list--profile__item--ilsa::before {
+    background-image: url("./img/ilsa-faust.jpg");
+  }
+  .list--profile__item--alan::before {
+    background-image: url("./img/alan-hunley.jpg");
+  }
+  .list--profile__item--alan::before {
+    background-image: url("./img/alan-hunley.jpg");
+  }
+  .list--profile__item--solomon::before {
+    background-image: url("./img/solomon-lane.jpg");
+  }
+  .list--profile__item--kurt::before {
+    background-image: url("./img/kurt-hendricks.jpg");
+  }
+  .list--profile__item--owen::before {
+    background-image: url("./img/owen-davian.jpg");
+  }
+  .list--profile__item--hugh::before {
+    background-image: url("./img/hugh-stamp.jpg");
+  }
+  .list--profile__item--august::before {
+    background-image: url("./img/august-walker.jpg");
+  }
+  .list--profile__item--franz::before {
+    background-image: url("./img/franz-krieger.jpg");
+  }
+  .list--profile__item--sean::before {
+    background-image: url("./img/sean-ambrose.jpg");
+  }
+  .list--profile__item--jim::before {
+    background-image: url("./img/jim-phelps.jpg");
+  }
+  .list--profile__item--william::before {
+    background-image: url("./img/william-brandt.jpg");
+  }
+  .list--profile__item--julia::before {
+    background-image: url("./img/julia.jpg");
+  }
+  .list--profile__item--lindsey::before {
+    background-image: url("./img/lindsey-farris.jpg");
+  }
+  .list--profile__item--nyah::before {
+    background-image: url("./img/nyah-nardoff-hall.jpg");
+  }
+  .list--profile__item--jane::before {
+    background-image: url("./img/jane-carter.jpg");
+  }
+  .list--profile__item--chimera::before {
+    background-image: url("./img/chimera.jpg");
+  }
+  .list--profile__item--rabbits::before {
+    background-image: url("./img/rabbits-foot.png");
+  }
+  .list--profile__item--nuke::before {
+    background-image: url("./img/portable-nuclear-device.jpg");
+  }
+  .list--profile__item--submarine::before {
+    background-image: url("./img/delta-3-submarine.jpg");
+  }
+}
+
+@keyframes expand-profile {
+  from { width: 0%; }
+  to {width: 100%; }
+}
+
