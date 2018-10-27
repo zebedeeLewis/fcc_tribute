@@ -61,6 +61,8 @@
 @media (min-width: 768px) {
   .main [class*="panel--"] {
     box-sizing: border-box;
+	display: flex;
+    flex-direction: column;
     margin-left: auto;
     height: 100%;
     max-width: 100%;
@@ -69,6 +71,7 @@
   }
 
   .panel__state--visibility:checked ~ .panel--intro {
+    overflow-y: auto;
     box-sizing: border-box;
     padding-top: var(--spacing8);
     padding-right: var(--spacing8);

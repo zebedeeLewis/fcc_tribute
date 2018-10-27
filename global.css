@@ -202,6 +202,7 @@ p {
 }
 
 .img-div {
+  flex: 2 1 0;
   display: flex;
   justify-content: center;
 }
@@ -219,8 +220,12 @@ p {
 }
 
 .credit {
+  box-sizing: border-box;
+  flex: 1 1 auto;
+  /*
   padding-top: var(--spacing3);
   padding-bottom: var(--spacing1);
+  */
   text-align: center;
 }
 
@@ -253,11 +258,13 @@ p {
   }
 
   .navigation {
+	box-sizing: border-box;
     order: 2;
     height: 15%;
   }
 
   .main {
+	box-sizing: border-box;
     order: 1;
     height: 70%;
     width: 90%;
@@ -266,6 +273,10 @@ p {
   }
 
   .footer {
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	justify-content: space-around;
     order: 3;
     height: 15%;
   }
