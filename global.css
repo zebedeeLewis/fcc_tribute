@@ -198,6 +198,7 @@ p {
            var(--spacing3);
   width: 100%;
   z-index: 3;
+  font-size: 80%;
 }
 
 .img-div {
