@@ -31,14 +31,24 @@
   <body>
     <div class="wrapper">
       <nav class="navigation">
-        <a class="nav__ctrl--slide-left navigation__component"
-         href="#nav">
+        <input type="radio" name="state-group--slide-limiter"
+         class="slide-limiter__state--lift"
+         id="slide-limiter--left__state--lift" />
+        <input type="radio" name="state-group--slide-limiter"
+         class="slide-limiter__state--lift"
+         id="slide-limiter--right__state--lift" />
+
+        <label for="slide-limiter--left__state--lift"
+         class="nav__ctrl--slide-left navigation__component" >
           <span class="fas fa-chevron-left"></span>
-        </a>
-        <a class="nav__ctrl--slide-right navigation__component"
-         href="#nav">
+        </label>
+        <label for="slide-limiter--right__state--lift"
+         class="nav__ctrl--slide-right navigation__component" >
           <span class="fas fa-chevron-right"></span>
-        </a>
+        </label>
+
+        <span class="slide-limiter--left"></span>
+        <span class="slide-limiter--right"></span>
 
         <input id="nav__state--visibility" type="checkbox"
          class="nav__state--visibility" />
